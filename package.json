@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "Cypress run",
+    "test": "Cypress run --env URL=http://localhost:4000",
+    "test-qa": "Cypress run --env URL=http://www.qa.com",
+    "test-prod": "Cypress run --env URL=http://www.prod.com.br",
+
     "cy:headed": "cypress run --headed",
     "cy:open": "cypress open"
 
