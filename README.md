@@ -1,28 +1,3 @@
-describe('Login', () => {
-  beforeEach(() => {
-     cy.visit('/')
-     cy.screenshot('apos-visitar-pagina')
-  });
-  it('Login com dados válidos deve permitir entrada no sistema', () => {
-    //Act
-    cy.fazerLoginComCredenciaisValidas() 
-
-    //Assert
-    cy.contains('h4', 'Realizar Transferência').should('be.visible')  
-  })
-
-  it('Login com dados inválidos deve apresentar mensagem de erro', () => {
-
-    //Act
-    cy.fazerLoginComCredenciaisIvalidas()
-
-    //Assert
-    cy.verificarMensagemNoToast('Erro no login. Tente novamente.')
-  })
-
-})
-
-
 # Projeto de Testes Automatizados - Banco Web
 
 Este repositório contém testes automatizados desenvolvidos com [Cypress](https://www.cypress.io/) e JavaScript, como prática da mentoria em automação de testes. O objetivo é validar funcionalidades essenciais do sistema Banco Web, utilizando boas práticas de organização e relatórios.
@@ -100,4 +75,4 @@ cy.verificarMensagemNoToast('Autenticação necessária para transferências aci
 - [cypress-mochawesome-reporter](https://github.com/cypress-io/cypress-mochawesome-reporter)
 
 ---
-Mentoria em automação de testes - Projeto Banco Web
+Mentoria 2.0 modulo em automação de testes - Projeto Banco Web
