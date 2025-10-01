@@ -7,15 +7,14 @@
     "test": "Cypress run",
     "test-qa": "Cypress run",
     "test-prod": "Cypress run",
-
     "cy:headed": "cypress run --headed",
     "cy:open": "cypress open"
-
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^14.5.1"
+    "cypress": "^14.5.1",
+    "cypress-mochawesome-reporter": "^4.0.2"
   }
 }
